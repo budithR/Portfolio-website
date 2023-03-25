@@ -409,8 +409,87 @@ main{
 /* Facts section end */
 
 /* Skill section start */
+#skill{
+    padding: 50px 30px;
+    background-color: white;
+}
+#skill .skill-row{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 30px;
+    margin-top: 50px;
+}
+#skill .skill-row .skill-box .skill-info img{
+    height: 60px;
+    width: 80px;
+    padding-left: 10px;
+}
+#skill .skill-row .skill-box .skill-info{
+    /* background-color: rgb(238, 234, 234); */
+    border-radius: 10px;
+    justify-content: center;
+}
+
+#skill .skill-row .skill-box .skill-info p{
+    color: var(--textColor);
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 20px;
+}
+/* Mobile view */
+@media only screen and (max-width: 750px){
+    #skill .skill-row{
+        
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        margin-top: 50px;
+    }
+}
+
 
 /* Skill section end */
+
+/* Download CV button start */
+#CVdownload{
+    padding: 10px 30px;
+    background-color: white;
+}
+button {
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+button {
+    border: 3px solid var(--themeColor);
+    
+    border-radius:0px;
+    --c: #00A78E ; /* the color*/
+    
+    /* box-shadow: 0 0 0 .2em inset var(--c);  */
+    --_g: linear-gradient(var(--c) 0 0) no-repeat;
+    background: 
+      var(--_g) calc(var(--_p,0%) - 100%) 0%,
+      var(--_g) calc(200% - var(--_p,0%)) 0%,
+      var(--_g) calc(var(--_p,0%) - 100%) 100%,
+      var(--_g) calc(200% - var(--_p,0%)) 100%;
+    background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+    outline-offset: .1em;
+    transition: background-size .4s, background-position 0s .4s;
+  }
+  button:hover {
+    color: white;
+    --_p: 100%;
+    transition: background-position .4s, background-size 0s;
+  }
+  button:active {
+    box-shadow: 0 0 9e9q inset #0009; 
+    background-color: var(--c);
+    color: #fff;
+  }
+
+/* Download CV button start */
 
 
 

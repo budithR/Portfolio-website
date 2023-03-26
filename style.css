@@ -11,8 +11,8 @@
 /* Global variables */
 :root{
     --sideBGColor: #040b14;
-    --themeColor: #00A78E;
-    --iconBGColor: #493901;
+    --themeColor: #00b4d8;
+    --iconBGColor: #073342;
     --textColor: #525252;
     --bgColor: #F7F7F7;
 }
@@ -178,6 +178,7 @@ main{
     justify-content: center;
     padding: 70px;
     position: relative;
+    opacity: 92%;
 }
 /* Overlay */
 #home::before{
@@ -466,7 +467,7 @@ button {
     border: 3px solid var(--themeColor);
     
     border-radius:0px;
-    --c: #00A78E ; /* the color*/
+    --c: #00b4d8 ; /* the color*/
     
     /* box-shadow: 0 0 0 .2em inset var(--c);  */
     --_g: linear-gradient(var(--c) 0 0) no-repeat;
